@@ -1,7 +1,6 @@
 FROM alpine:3.6.2
 MAINTAINER Aviad Pines (Forked from Calvin Leung Huang <https://github.com/calvn>)
 
-CONSUL_PORT=8500
 if [ -z "$CONSUL_IP" ] || [ -z "$CONFIG_URI" ] ; then
     echo "CONSUL_IP and CONFIG_URI must be defined
     exit 1
