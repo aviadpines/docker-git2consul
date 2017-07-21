@@ -9,6 +9,6 @@ wget -O /etc/git2consul.d/config.json $CONFIG_URI
 
 /usr/bin/git2consul \
     --endpoint $CONSUL_IP \
+    -c git2consul/${CONFIG_KEY}/config \
     --port ${CONSUL_PORT:=8500} \
-    --config-file /etc/git2consul.d/config.json \
-    --config-key git2consul/${CONFIG_KEY}/config
+    --config-file /etc/git2consul.d/config.json 
