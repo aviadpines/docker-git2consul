@@ -9,5 +9,4 @@ RUN apk --update add nodejs nodejs-npm git openssh ca-certificates openssl && \
     npm install git2consul@0.12.13 --global && \
     mkdir -p /etc/git2consul.d
 
-#ENTRYPOINT [ "sh", "-c", "start.sh" ]
 CMD [ "/start.sh" ]
