@@ -22,7 +22,7 @@ if [ "$CONFIG_LOCAL" = true  ]; then
 	         }
 	      ],
 	      "source_root": "configurations",
-              "ignore_file_extension": true,
+	      "ignore_file_extension": true,
 	      "include_branch_name": false,
 	      "name": "${CONFIG_ENV}/config",
 	      "url": "https://github.com/aviadpines/consul_config.git"
