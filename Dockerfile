@@ -6,7 +6,7 @@ RUN chmod +x /start.sh
 
 RUN apk --update add nodejs nodejs-npm git openssh ca-certificates openssl groff less python py-pip && \
     pip install awscli && \
-	apk --purge -v del py-pip && \
+    apk --purge -v del py-pip && \
     rm -rf /var/cache/apk/* && \
     npm install git2consul@0.12.13 --global && \
     mkdir -p /etc/git2consul.d
