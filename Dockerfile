@@ -11,4 +11,8 @@ RUN apk --update add nodejs nodejs-npm git openssh ca-certificates openssl groff
     npm install git2consul@0.12.13 --global && \
     mkdir -p /etc/git2consul.d
 
+# connect git to aws codecommit
+RUN git config --global credential.helper '!aws codecommit credential-helper $@' && \
+    git config --global credential.UseHttpPath true
+
 CMD [ "/start.sh" ]
