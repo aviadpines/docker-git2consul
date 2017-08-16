@@ -25,7 +25,7 @@ if [ "$CONFIG_LOCAL" = true  ]; then
 	      "ignore_file_extension": true,
 	      "include_branch_name": false,
 	      "name": "${CONFIG_ENV}/config",
-	      "url": "https://github.com/aviadpines/consul_config.git"
+	      "url": "https://git-codecommit.us-west-2.amazonaws.com/v1/repos/services-configuration"
 	    }
 	  ]
 	}
